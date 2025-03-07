@@ -1,8 +1,6 @@
-// components/BalanceDisplay.js
 import React from 'react';
 
 const BalanceDisplay = ({ balance }) => {
-  // Add a default value or handle null/undefined
   const formattedBalance = balance !== null && balance !== undefined 
     ? balance.toLocaleString()
     : '0';

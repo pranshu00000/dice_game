@@ -103,4 +103,3 @@ const Web3Wallet = ({ setBalance }) => {
 
 export default Web3Wallet;
 
-// <Web3Wallet setBalance={setBalance} />

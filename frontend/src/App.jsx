@@ -50,7 +50,7 @@ function App() {
 
   const fetchNewServerSeedHash = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/new-seed');
+      const response = await axios.get('https://dice-game-7mwa.onrender.com/api/new-seed');
       setServerSeed('');
       setPreviousServerSeed(response.data.previousServerSeed || '');
       setPreviousServerSeedHash(response.data.previousServerSeedHash || '');
@@ -69,7 +69,7 @@ function App() {
     setRolling(true);
     
     try {
-      const response = await axios.post('http://localhost:3000/api/roll-dice', {
+      const response = await axios.post('https://dice-game-7mwa.onrender.com/api/roll-dice', {
         betAmount,
         clientSeed,
         nonce,
